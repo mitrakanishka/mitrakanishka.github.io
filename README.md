@@ -1,12 +1,12 @@
 # Kanishka Mitra Personal Website
 
-Minimal academic personal website built with plain HTML, CSS, and JavaScript.
+Minimal academic personal website built with plain HTML, CSS, and JavaScript in a stripped-down academic homepage style.
 
 ## Files
 
 - `index.html`: page content and section structure
 - `styles.css`: all visual styling
-- `script.js`: small enhancements for photo fallback, section reveal, and nav highlighting
+- `script.js`: tiny fallback for a missing headshot
 - `assets/`: place your headshot and CV here
 
 ## How to add your headshot
@@ -15,7 +15,7 @@ Minimal academic personal website built with plain HTML, CSS, and JavaScript.
 2. Keep the filename exactly `headshot.jpg`
 3. A square image works best, ideally at least 900 x 900 px
 
-If the file is missing, the page shows a built-in placeholder card instead.
+If the file is missing, the page shows a simple fallback message instead.
 
 ## How to add your CV
 
@@ -28,12 +28,10 @@ The existing CV buttons already point to that file path.
 
 Open `index.html` and replace the placeholder text in:
 
-- hero intro
-- bio
+- intro / bio paragraph
 - research interests
 - selected publications
 - projects
-- institution/location details
 - Scholar, GitHub, and email links
 
 ## Local preview
