@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Characterizing Expectation Mismatch in a Brain-Controlled Upper-Body
+      Rehabilitation Exoskeleton
+    </title>
+    <meta
+      name="description"
+      content="Project page for Characterizing Expectation Mismatch in a Brain-Controlled Upper-Body Rehabilitation Exoskeleton."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/eliahuhorwitz/Academic-project-page-template@master/static/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/eliahuhorwitz/Academic-project-page-template@master/static/css/fontawesome.all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/eliahuhorwitz/Academic-project-page-template@master/static/css/index.css"
+    />
+    <link rel="stylesheet" href="../shared/project-page.css" />
+    <script src="../shared/project-page.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <h1 class="title is-1 publication-title">
+                  Characterizing Expectation Mismatch in a Brain-Controlled
+                  Upper-Body Rehabilitation Exoskeleton
+                </h1>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block">Satyam Kumar<sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a class="page-anchor-link" href="../../index.html"
+                      ><strong>Kanishka Mitra</strong></a
+                    ><sup>1</sup>,</span
+                  >
+                  <span class="author-block"
+                    >Deland H. Liu<sup>1</sup>,</span
+                  >
+                  <span class="author-block"
+                    >Hussein Alawieh<sup>1</sup>,</span
+                  >
+                  <span class="author-block"
+                    >Frigyes Samuel Racz<sup>2</sup>,</span
+                  >
+                  <span class="author-block"
+                    >Stefano Dalla Gasperina<sup>3</sup>,</span
+                  >
+                  <span class="author-block"
+                    >Ashish D. Deshpande<sup>3,5</sup>,</span
+                  >
+                  <span class="author-block"
+                    >Jos&eacute; del R. Mill&aacute;n<sup>1,2,4</sup></span
+                  >
+                </div>
+
+                <div class="is-size-6 publication-authors publication-affiliations">
+                  <span class="author-block"
+                    ><sup>1</sup> Chandra Family Department of Electrical and
+                    Computer Engineering, The University of Texas at Austin</span
+                  >
+                  <span class="author-block"
+                    ><sup>2</sup> Department of Neurology, The University of
+                    Texas at Austin</span
+                  >
+                  <span class="author-block"
+                    ><sup>3</sup> Walker Department of Mechanical Engineering,
+                    The University of Texas at Austin</span
+                  >
+                  <span class="author-block"
+                    ><sup>4</sup> Department of Biomedical Engineering, The
+                    University of Texas at Austin</span
+                  >
+                  <span class="author-block"
+                    ><sup>5</sup> Meta Reality Labs Research</span
+                  >
+                  <span class="author-block">IEEE RA-L, 2025</span>
+                </div>
+
+                <div class="column has-text-centered">
+                  <div class="publication-links">
+                    <span class="link-block">
+                      <a
+                        href="assets/media/kumar-ral-2025-paper.pdf"
+                        target="_blank"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <span class="link-block">
+                      <a
+                        href="https://ieeexplore.ieee.org/abstract/document/11260927"
+                        target="_blank"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="fas fa-book"></i>
+                        </span>
+                        <span>IEEE</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero teaser">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <div class="page-figure-frame teaser-figure is-compact">
+              <img
+                src="assets/figures/fig_1_experimental_setup.png"
+                alt="Representative figure for the expectation mismatch paper"
+              />
+            </div>
+            <h2 class="subtitle has-text-centered">
+              <em><strong>Error-aware rehabilitation control:</strong></em>
+              A brain-controlled upper-body exoskeleton study that transfers an
+              expert decoder to naive users and characterizes
+              expectation-mismatch ErrPs during closed-loop control.
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3 section-heading">Abstract</h2>
+              <div class="content has-text-justified">
+                <p>
+                  Robot-assisted therapy can deliver intensive training, but
+                  its clinical impact remains limited when the user is only
+                  passively moved by the robot. This paper closes the loop with
+                  a motor-imagery BCI and studies what happens when the robot’s
+                  behavior does not match the user’s intent. The authors show
+                  that a decoder trained on an expert subject can be transferred
+                  to naive users for online control of an upper-body
+                  rehabilitation exoskeleton in a rest-versus-reaching task.
+                  They then characterize error-related potentials generated by
+                  expectation mismatch between brain commands and robot actions
+                  during closed-loop control, and show that those mismatches
+                  can be decoded in a subject-independent setting with a mean
+                  AUC of 0.77.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-small">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="content">
+                <h2 class="title is-3 section-heading">
+                  Experimental Setup and Closed-Loop Paradigm
+                </h2>
+                <div class="level-set has-text-justified">
+                  <p>
+                    Subjects used a motor-imagery BCI to control Harmony, an
+                    upper-body rehabilitation exoskeleton, in a rest-versus-
+                    reaching task. Successful reaching imagery drove the robot
+                    toward a goal, successful rest imagery kept it still, and
+                    failures to sustain the intended state triggered erroneous
+                    robot behaviors. Those mismatches between expectation and
+                    robot action created the ErrP events studied in the rest of
+                    the paper.
+                  </p>
+                </div>
+                <div class="page-figure-frame" data-figure-frame>
+                  <img
+                    src="assets/figures/fig_1_experimental_setup.png"
+                    alt="Placeholder for the experimental setup figure"
+                  />
+                </div>
+                <p class="figure-caption has-text-centered">
+                  Figure 1. Experimental setup. Subjects operated an MI-BCI to
+                  control Harmony, an upper-limb exoskeleton, in reaching for
+                  objects. Successful delivery of reaching MI drove Harmony
+                  toward the goal, while failures to sustain the intended state
+                  produced erroneous robot behaviors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-small is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="content">
+                <h2 class="title is-3 section-heading">
+                  Grand Average ErrPs
+                </h2>
+                <div class="level-set has-text-justified">
+                  <p>
+                    The paper first establishes the expectation-mismatch signal
+                    directly in the EEG. Grand average erroneous and correct
+                    trials are compared at FCz, with the mismatch event aligned
+                    to time zero and spatial insets showing the topography near
+                    the positive and negative peaks of the ErrP response.
+                  </p>
+                </div>
+                <div class="page-figure-frame is-standard-figure" data-figure-frame>
+                  <img
+                    src="assets/figures/fig_2_grand_average_errps.png"
+                    alt="Placeholder for the grand average ErrPs figure"
+                  />
+                </div>
+                <p class="figure-caption has-text-centered">
+                  Figure 2. Grand average ErrPs. Time-locked grand averages of
+                  erroneous and correct classes across subjects (n = 8) at FCz,
+                  with shaded regions showing the standard error of the mean
+                  and topography insets centered on the main ErrP peaks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero is-small">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <h2 class="title is-3 section-heading">Results</h2>
+            <div class="content has-text-justified">
+              <p>
+                The results show two linked outcomes. First, naive users can
+                operate the exoskeleton online using an expert-trained decoder,
+                making closed-loop error events available without subject-
+                specific calibration. Second, those expectation-mismatch events
+                produce clear neurophysiological signatures that support
+                subject-independent ErrP decoding, a practical requirement for
+                rehabilitation scenarios where collecting personalized ErrP
+                datasets is difficult.
+              </p>
+            </div>
+            <div class="columns is-centered results-pair">
+              <div class="column is-half">
+                <div class="page-figure-frame is-standard-figure" data-figure-frame>
+                  <img
+                    src="assets/figures/fig_3_neural_markers_expectation_mismatch.png"
+                    alt="Placeholder for the neural markers of expectation mismatch figure"
+                  />
+                </div>
+                <p class="figure-caption has-text-centered">
+                  Figure 3. Neural markers of expectation mismatch. Each dot
+                  corresponds to the subject-level average marker for correct
+                  and erroneous classes, including P1, N2, and theta-power
+                  ratio comparisons.
+                </p>
+              </div>
+              <div class="column is-half">
+                <div class="page-figure-frame is-standard-figure" data-figure-frame>
+                  <img
+                    src="assets/figures/fig_4_time_frequency_decomposition_errps.png"
+                    alt="Placeholder for the time-frequency ErrP decomposition figure"
+                  />
+                </div>
+                <p class="figure-caption has-text-centered">
+                  Figure 4. Time-frequency decomposition of ErrPs. Difference
+                  in time-frequency representations between erroneous and
+                  correct trials across subjects, highlighting theta-band power
+                  changes relative to event onset at FCz.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-small is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="content">
+                <h2 class="title is-3 section-heading">
+                  Toward Subject-Independent Error Detection
+                </h2>
+                <div class="level-set has-text-justified">
+                  <p>
+                    The key practical contribution is that expectation mismatch
+                    can be decoded without collecting subject-specific ErrP
+                    training data for every user. That combination of
+                    calibration-free MI control and subject-independent error
+                    detection points toward more reliable brain-controlled
+                    rehabilitation robots, where erroneous actions can
+                    eventually be detected and corrected online.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+          <div class="bibtex-header">
+            <h2 class="title">BibTeX</h2>
+            <button
+              class="copy-bibtex-btn"
+              onclick="copyBibTeX()"
+              title="Copy BibTeX to clipboard"
+            >
+              <i class="fas fa-copy"></i>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+          <pre id="bibtex-code"><code>@article{kumar2025characterizing,
+  title={Characterizing Expectation Mismatch in a Brain-Controlled Upper-Body Rehabilitation Exoskeleton},
+  author={Kumar, Satyam and Mitra, Kanishka and Liu, Deland H and Alawieh, Hussein and Racz, Frigyes Samuel and Dalla Gasperina, Stefano and Deshpande, Ashish D and Mill{\'a}n, Jos{\'e} del R},
+  journal={IEEE Robotics and Automation Letters},
+  volume={11},
+  number={1},
+  pages={762--769},
+  year={2025},
+  publisher={IEEE}
+}</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the
+                <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank"
+                  >Academic Project Page Template</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

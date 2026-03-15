@@ -13,3 +13,4 @@ Each publication should live in its own folder under `publications/`.
 
 - `real-time-decoding-movement-onset-offset/`: ICRA 2026 project page for the exoskeleton paper
 - `characterizing-onset-offset-motor-imagery-passive-arm-exoskeleton/`: IROS 2023 project page for the passive-arm motor imagery paper
+- `characterizing-expectation-mismatch-brain-controlled-exoskeleton/`: IEEE RA-L 2025 project page for the expectation mismatch paper

@@ -68,6 +68,22 @@ html {
   margin: 0 auto;
 }
 
+.teaser-figure.is-compact {
+  max-width: 620px;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 18px;
+}
+
+.teaser-figure.is-compact img {
+  width: auto;
+  max-width: 100%;
+  max-height: 280px;
+  margin: 0 auto;
+}
+
 .results-pair {
   gap: 1.75rem;
   margin-top: 1.2rem;
@@ -146,6 +162,15 @@ html {
 @media (max-width: 768px) {
   .teaser-figure {
     max-width: 100%;
+  }
+
+  .teaser-figure.is-compact {
+    min-height: 260px;
+    padding: 14px;
+  }
+
+  .teaser-figure.is-compact img {
+    max-height: 230px;
   }
 
   .page-figure-frame.is-standard-figure {
