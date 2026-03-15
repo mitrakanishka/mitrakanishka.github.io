@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Real-Time Decoding of Movement Onset and Offset for Brain-Controlled
+      Rehabilitation Exoskeleton
+    </title>
+    <meta
+      name="description"
+      content="Project page for Real-Time Decoding of Movement Onset and Offset for Brain-Controlled Rehabilitation Exoskeleton."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/eliahuhorwitz/Academic-project-page-template@master/static/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/eliahuhorwitz/Academic-project-page-template@master/static/css/fontawesome.all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/eliahuhorwitz/Academic-project-page-template@master/static/css/index.css"
+    />
+    <link rel="stylesheet" href="../shared/project-page.css" />
+    <script src="../shared/project-page.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <h1 class="title is-1 publication-title">
+                  Real-Time Decoding of Movement Onset and Offset for
+                  Brain-Controlled Rehabilitation Exoskeleton
+                </h1>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block">
+                    <a class="page-anchor-link" href="../../index.html"
+                      ><strong>Kanishka Mitra</strong></a
+                    ><sup>1,2</sup>,</span
+                  >
+                  <span class="author-block">Satyam Kumar<sup>2</sup>,</span>
+                  <span class="author-block"
+                    >Frigyes Samuel Racz<sup>2</sup>,</span
+                  >
+                  <span class="author-block">Deland Liu<sup>2</sup>,</span>
+                  <span class="author-block"
+                    >Ashish D. Deshpande<sup>2,3</sup>,</span
+                  >
+                  <span class="author-block"
+                    >Jos&eacute; del R. Mill&aacute;n<sup>2</sup></span
+                  >
+                </div>
+
+                <div class="is-size-6 publication-authors publication-affiliations">
+                  <span class="author-block"
+                    ><sup>1</sup> Massachusetts Institute of Technology</span
+                  >
+                  <span class="author-block"
+                    ><sup>2</sup> The University of Texas at Austin</span
+                  >
+                  <span class="author-block"
+                    ><sup>3</sup> Meta Reality Labs Research</span
+                  >
+                  <span class="author-block">ICRA 2026</span>
+                </div>
+
+                <div class="column has-text-centered">
+                  <div class="publication-links">
+                    <span class="link-block">
+                      <a
+                        href="assets/media/mitra-icra-2026-paper.pdf"
+                        target="_blank"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <span class="link-block">
+                      <a
+                        href="#"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                      </a>
+                    </span>
+
+                    <span class="link-block">
+                      <a
+                        href="#"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero teaser">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <div class="page-figure-frame teaser-figure">
+              <img
+                src="assets/figures/fig_1_EXP_setup.png"
+                alt="Experimental setup, task timeline, recentering method, and decoder pipeline"
+              />
+            </div>
+            <h2 class="subtitle has-text-centered">
+              <em><strong>Dual-state EEG control:</strong></em> A noninvasive
+              brain-computer interface that starts and stops rehabilitation
+              exoskeleton assistance in real time, while using fixation-based
+              recentering to improve robustness across sessions.
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3 section-heading">Abstract</h2>
+              <div class="content has-text-justified">
+                <p>
+                  Robot-assisted therapy can deliver high-dose, task-specific
+                  training after neurologic injury, but most systems act
+                  primarily at the limb level, engaging the impaired neural
+                  circuits only indirectly. We address this gap by implementing
+                  online, dual-state motor imagery control of an upper-limb
+                  exoskeleton, enabling goal-directed reaches to be both
+                  initiated and terminated directly from noninvasive EEG. Eight
+                  participants used EEG to initiate assistance and then
+                  volitionally halt the robot mid-trajectory. Across two online
+                  sessions, group-mean hit rates were 61.5% for onset and 64.5%
+                  for offset, demonstrating reliable start-stop command delivery
+                  despite instrumental noise and passive arm motion.
+                  Methodologically, we reveal a systematic, class-driven bias
+                  induced by common task-based recentering using an asymmetric
+                  margin diagnostic, and we introduce a class-agnostic
+                  fixation-based recentering method that tracks drift without
+                  sampling command classes while preserving class geometry. This
+                  substantially improves threshold-free separability and reduces
+                  bias within and across days, helping bridge offline decoding
+                  and practical intention-driven control of a rehabilitation
+                  exoskeleton.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-small">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="content">
+                <h2 class="title is-3 section-heading">
+                  Experimental Setup and Task Timeline
+                </h2>
+                <div class="level-set has-text-justified">
+                  <p>
+                    Participants wore a 60-channel EEG cap while strapped into
+                    the Harmony upper-limb rehabilitation exoskeleton. Each
+                    trial cued a Start motor-imagery command to launch
+                    assistance toward one of three targets, followed by a Stop
+                    motor-imagery command to intentionally halt the reach
+                    mid-trajectory. Sensory-threshold neuromuscular electrical
+                    stimulation reinforced the current command state through
+                    agonist-antagonist pairing.
+                  </p>
+                </div>
+                <div class="page-figure-frame" data-figure-frame>
+                  <img
+                    src="assets/figures/fig_1_EXP_setup.png"
+                    alt="Experimental setup, task timeline, fixation-based recentering, and subject-specific decoding pipeline"
+                  />
+                </div>
+                <p class="figure-caption has-text-centered">
+                  Figure 1. Harmony setup, LED-cued task timeline,
+                  fixation-based recentering, and the subject-specific
+                  Riemannian decoding pipeline.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-small is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="content">
+                <h2 class="title is-3 section-heading">
+                  Neural Signatures During the Task
+                </h2>
+                <div class="level-set has-text-justified">
+                  <p>
+                    The offline spectrogram analysis shows clear mu-band
+                    desynchronization during Start motor imagery and a beta-band
+                    rebound after Stop motor imagery. These canonical signatures
+                    remain visible even with passive arm motion and
+                    exoskeleton-driven sensory feedback, supporting the use of
+                    dedicated onset and offset decoders rather than a single
+                    thresholded stream.
+                  </p>
+                </div>
+                <div class="page-figure-frame is-standard-figure" data-figure-frame>
+                  <img
+                    src="assets/figures/fig_2_spectrogram.png"
+                    alt="Grand-average C3 spectrogram with task events marked over time"
+                  />
+                </div>
+                <p class="figure-caption has-text-centered">
+                  Figure 2. Grand-average C3 spectrogram with task events
+                  marked over time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero is-small">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <h2 class="title is-3 section-heading">Results</h2>
+            <div class="content has-text-justified">
+              <p>
+                Online performance shows reliable dual-state control. Group-mean
+                onset hit rate improved from 58% in Session 2 to 65% in Session
+                3, while offset hit rates were 66% and 63% on attempted trials.
+                Onset decisions clustered near one second after the cue, whereas
+                offset decisions arrived around 3.3 to 3.4 seconds after
+                movement onset, consistent with participants intentionally
+                timing the stop command close to the target.
+              </p>
+            </div>
+            <div class="columns is-centered results-pair">
+              <div class="column is-half">
+                <div class="page-figure-frame is-standard-figure" data-figure-frame>
+                  <img
+                    src="assets/figures/fig3_online_command_delivery_accuracy.png"
+                    alt="Online hit, miss, and timeout rates for onset and offset across sessions"
+                  />
+                </div>
+                <p class="figure-caption has-text-centered">
+                  Figure 3. Hit, miss, and timeout rates for onset and offset
+                  across the two online sessions.
+                </p>
+              </div>
+              <div class="column is-half">
+                <div class="page-figure-frame is-standard-figure" data-figure-frame>
+                  <img
+                    src="assets/figures/fig4_online_decoding_time.png"
+                    alt="Onset and offset latency distributions for hit trials"
+                  />
+                </div>
+                <p class="figure-caption has-text-centered">
+                  Figure 4. Onset and offset latency distributions for hit
+                  trials only.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hero is-small is-light">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="content">
+                <h2 class="title is-3 section-heading">
+                  Fixation-Based Recentering
+                </h2>
+                <div class="level-set has-text-justified">
+                  <p>
+                    The paper shows that task-based recentering introduces a
+                    class-driven bias by shifting positive samples toward the
+                    pooled training center. Replacing that reference with a
+                    class-agnostic fixation period improves threshold-free AUC
+                    from 0.554 to 0.866 for onset and from 0.619 to 0.832 for
+                    offset, while reducing asymmetric margin shifts across runs
+                    and across days.
+                  </p>
+                </div>
+                <div class="columns is-centered results-pair">
+                  <div class="column is-half">
+                    <div class="page-figure-frame is-standard-figure" data-figure-frame>
+                      <img
+                        src="assets/figures/fig5_bias_shift_vs_identity.png"
+                        alt="Margin-shift analysis showing bias introduced by task-based recentering"
+                      />
+                    </div>
+                    <p class="figure-caption has-text-centered">
+                      Figure 5. Margin-shift analysis for task-based
+                      recentering.
+                    </p>
+                  </div>
+                  <div class="column is-half">
+                    <div class="page-figure-frame is-standard-figure" data-figure-frame>
+                      <img
+                        src="assets/figures/fig6_auc_by_run_task_vs_fix.png"
+                        alt="Run-wise AUC comparison for task-based versus fixation-based recentering"
+                      />
+                    </div>
+                    <p class="figure-caption has-text-centered">
+                      Figure 6. Run-wise AUC comparison for task-based versus
+                      fixation-based recentering.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+          <div class="bibtex-header">
+            <h2 class="title">BibTeX</h2>
+            <button
+              class="copy-bibtex-btn"
+              onclick="copyBibTeX()"
+              title="Copy BibTeX to clipboard"
+            >
+              <i class="fas fa-copy"></i>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+          <pre id="bibtex-code"><code>@inproceedings{mitra2026realtime,
+  title={Real-Time Decoding of Movement Onset and Offset for Brain-Controlled Rehabilitation Exoskeleton},
+  author={Mitra, Kanishka and Kumar, Satyam and Racz, Frigyes Samuel and Liu, Deland and Deshpande, Ashish D. and Millan, Jose del R.},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2026},
+  note={Add pages, DOI, and final publication URL}
+}</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the
+                <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank"
+                  >Academic Project Page Template</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

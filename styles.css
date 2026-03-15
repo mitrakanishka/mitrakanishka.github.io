@@ -101,18 +101,31 @@ p {
   text-align: center;
 }
 
-.profile-photo {
-  display: block;
+.profile-photo-frame {
   width: 230px;
   height: 230px;
   max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 14%;
+  transform: scale(0.8);
+  transform-origin: center center;
   border-radius: 50%;
 }
 
 .profile-photo.is-missing {
+  display: none;
+}
+
+.photo-cell.is-missing .profile-photo-frame {
   display: none;
 }
 
@@ -149,6 +162,28 @@ p {
 .entry-copy p {
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.publication-summary {
+  line-height: 1.42;
+}
+
+.featured-entry td {
+  background: #ffffd0;
+}
+
+.entry-preview {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center center;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  padding: 0;
+}
+
+.entry-preview.preview-focus-left {
+  object-position: left center;
 }
 
 .entry-thumb {
@@ -201,8 +236,7 @@ p {
   }
 
   .profile-photo {
-    max-width: 220px;
-    margin: 0 auto;
+    transform: scale(1.3);
   }
 
   .entry-media {
