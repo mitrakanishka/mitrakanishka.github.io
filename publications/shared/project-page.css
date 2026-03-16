@@ -103,6 +103,18 @@ html {
   max-height: 240px;
 }
 
+.demo-video-frame {
+  max-width: 760px;
+  margin: 1.15rem auto 0;
+}
+
+.demo-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000000;
+}
+
 .results-pair {
   gap: 1.75rem;
   margin-top: 1.2rem;

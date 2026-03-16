@@ -15,3 +15,4 @@ Each publication should live in its own folder under `publications/`.
 - `characterizing-expectation-mismatch-brain-controlled-exoskeleton/`: RA-L 2025 project page for the expectation mismatch paper
 - `performing-bimanual-tasks-bci-functional-limb/`: NER 2025 project page for the bimanual hand-exoskeleton paper
 - `characterizing-onset-offset-motor-imagery-passive-arm-exoskeleton/`: IROS 2023 project page for the passive-arm motor imagery paper
+- `hierarchical-machine-learning-bmi-exoskeleton-demo/`: IJCAI Workshop Demo 2023 page for the BMI-controlled Harmony demonstration
