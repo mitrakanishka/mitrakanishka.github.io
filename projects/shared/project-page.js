@@ -1,3 +1,17 @@
+document.querySelectorAll("a[href]").forEach((link) => {
+  const href = (link.getAttribute("href") || "").trim();
+
+  if (!href || href.startsWith("#") || href.startsWith("javascript:")) {
+    return;
+  }
+
+  link.setAttribute("target", "_blank");
+
+  if (!href.startsWith("mailto:")) {
+    link.setAttribute("rel", "noreferrer");
+  }
+});
+
 window.copyBibTeX = function copyBibTeX() {
   const bibtexElement = document.getElementById("bibtex-code");
   const button = document.querySelector(".copy-bibtex-btn");

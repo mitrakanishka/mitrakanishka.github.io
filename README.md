@@ -2,9 +2,6 @@
 
 Academic personal website built with plain HTML, CSS, and JavaScript. 
 
-
-## Local preview
-
 To preview locally:
 
 ```bash

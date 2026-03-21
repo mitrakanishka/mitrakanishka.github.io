@@ -2,6 +2,20 @@ const profilePhoto = document.querySelector(".profile-photo");
 const photoCell = document.querySelector(".photo-cell");
 const hoverPreviews = document.querySelectorAll("[data-hover-preview]");
 
+document.querySelectorAll("a[href]").forEach((link) => {
+  const href = (link.getAttribute("href") || "").trim();
+
+  if (!href || href.startsWith("#") || href.startsWith("javascript:")) {
+    return;
+  }
+
+  link.setAttribute("target", "_blank");
+
+  if (!href.startsWith("mailto:")) {
+    link.setAttribute("rel", "noreferrer");
+  }
+});
+
 if (profilePhoto && photoCell) {
   profilePhoto.addEventListener("error", () => {
     profilePhoto.classList.add("is-missing");
